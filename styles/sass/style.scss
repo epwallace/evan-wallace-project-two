@@ -1,1 +1,59 @@
 @import 'setup';
+
+// colorscheme
+$black: #2c2c2c;
+$offwhite: #f0efed;
+$forestgreen: #074115;
+$sunnyyellow: #f8e71c;
+$green: #0e902d;
+
+a {
+    text-decoration: none;
+}
+
+
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    /* background */
+    background: url(../assets/home-image-1.jpg);
+    background-size: cover;
+
+    /* dimensions */
+    height: 60vh;
+    min-height: 500px;
+    width: 100vw;
+
+    a {
+        color: $offwhite;
+
+        &:hover, &:focus, &.active {
+            color: $sunnyyellow;
+            font-weight: bold;
+        }
+    }
+
+    img {
+        display: none;
+    }
+}
+
+h1 {
+    color: $offwhite;
+    word-spacing: 9999rem;
+
+    emph {
+        color: $sunnyyellow;
+    }
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
