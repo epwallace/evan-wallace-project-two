@@ -183,3 +183,27 @@ button {
 .fa-stack-2x {
     color: $sunnyyellow;
 }
+
+.founder {
+    background-color: $offwhite;
+}
+
+.founder-banner {
+    width: 100vw;
+}
+
+.founder-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.founder-content img {
+    box-shadow: 20px 20px 0 0 $sunnyyellow;
+}
+.founder-text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%; 
+    justify-content: space-between;
+}
+
