@@ -207,3 +207,19 @@ button {
     justify-content: space-between;
 }
 
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+
+    img {
+        width: 30%;
+    }
+}
+
+footer {
+    background: $black;
+    color: $offwhite;
+    text-align: center;
+    padding: 10px 0;
+}
