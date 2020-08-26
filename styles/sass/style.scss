@@ -8,6 +8,13 @@ $forestgreen: #074115;
 $sunnyyellow: #f8e71c;
 $green: #0e902d;
 
+@mixin text-column($alignment) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: $alignment;
+}
+
 a {
     text-decoration: none;
 }
@@ -89,12 +96,18 @@ h1 {
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: $offwhite;
     padding: 100px 0;
 }
 
+.intro-text {
+    @include text-column(center);
+    width: 60%;
+
+    p {
+        padding: 20px;
+    }
+}
 .flower-content {
     display: flex;
     justify-content: space-between;
