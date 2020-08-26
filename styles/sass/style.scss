@@ -56,6 +56,7 @@ h1 {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-top: 20px;
 }
 
 .top-bar {
@@ -97,10 +98,11 @@ h1 {
 .flower-content {
     display: flex;
     justify-content: space-between;
+    padding: 100px 0;
 }
 
 .content-tile {
-    width: 45%; 
+    width: 45%;
     display: flex;
     flex-direction: column;
 
@@ -129,6 +131,11 @@ button {
     color: $offwhite;
     border: 0;
     display: block;
+}
+
+.bullet-points {
+    background: $offwhite;
+    padding: 100px 0;
 }
 
 .bullet-points>ul {
