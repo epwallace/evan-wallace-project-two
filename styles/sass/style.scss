@@ -123,3 +123,37 @@ h1 {
         }
     }
 }
+
+button {
+    background-color: $green;
+    color: $offwhite;
+    border: 0;
+    display: block;
+}
+
+.bullet-points>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+        flex: 0 1 50%;
+        padding: 5px;
+    }
+
+}
+
+.bullet-point {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.fa-stack-1x, .fa-leaf {
+    color: $black !important;
+}
+
+.fa-stack-2x {
+    color: $sunnyyellow;
+}
