@@ -125,6 +125,10 @@ h1 {
         @include text-column(flex-end);
         text-align: right;
 
+        button {
+            margin-left: auto;
+        }
+
         img {
             box-shadow: 20px 20px 0 0 $sunnyyellow;
             position: relative;
@@ -143,6 +147,10 @@ h1 {
             top: 20%;
         }
     }
+}
+
+.section-text {
+    width: 80%;
 }
 
 button {
