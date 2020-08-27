@@ -620,15 +620,36 @@ button {
   padding: 5px;
 }
 
-.bullet-point {
+.bullet-points ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+}
+
+.bullet-grid {
+  -ms-flex-preferred-size: 47.5%;
+      flex-basis: 47.5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 80px 200px;
+      grid-template-rows: 80px 200px;
+  grid-gap: 0px 10px;
+}
+
+.bullet-grid span, .bullet-grid h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.bullet-grid p {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 /span 1;
 }
 
 .fa-stack-1x, .fa-leaf {
