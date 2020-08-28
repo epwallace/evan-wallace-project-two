@@ -13,13 +13,12 @@ a {
     text-decoration: none;
 }
 
-
-
 .wrapper {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 header {
     /* background */
     background: url(../assets/home-image-1.jpg);
@@ -29,15 +28,6 @@ header {
     height: 60vh;
     min-height: 500px;
     width: 100vw;
-
-    a {
-        color: $offwhite;
-
-        &:hover, &:focus, &.active {
-            color: $sunnyyellow;
-            font-weight: bold;
-        }
-    }
 
     img {
         display: none;
