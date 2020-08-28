@@ -5,8 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>planted</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/65f3f78201.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- TODO: add skip link -->
+    <header>
+        <div class="wrapper header-content">
+                <nav class="top-bar">
+                    <ul>
+                        <li>
+                            <a href="./index.html" class="logo">Planted</a>
+                        </li>
+                        <li>
+                            <a href="./index.html" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="./blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            <img src="./assets/header-box.jpg" alt="Nerve plant (Fittonia verschaffeltii) with green leaves and silver venation" class="header-box">
+        </div>
+    </header>
+
+    <main class="content-grid" id="main">
+        <div class="subpage main-heading">
+            <h2 class="page-title">Get in Touch</h2>
+        </div>
+
+            <div class="sidebar">
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                <ul class="contact-info">
+                    <li class="email-address"">info@email.com</li>
+                    <li>123-456-7890</li>
+                    <li>123 Queen Street West, Unit 10</li>
+                    <li>Toronto, Ontario</li>
+                    <li>M5V2D5</li>
+                </ul>
+            </div>
+
+            <section class="contact-form">
+                <form action>
+                    <fieldset class="submittor">
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="email" placeholder="Name" id="name">
+                        <label for="email" class="visuallyHidden">Email</label> 
+                        <input type="email" placeholder="Email" id="email">
+                    </fieldset>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+    </main>
     
 </body>
 </html>

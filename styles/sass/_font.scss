@@ -59,6 +59,23 @@ button {
     line-height: 32px;
 }
 
+.socials {
+    font-size: 20px;
+}
+
+.contact-info {
+    li {
+        font-family: $roboto;
+        font-size: 18px;
+        line-height: 24px;;
+    }
+
+    li.email-address {
+        font-family: $josefin;
+        font-size: 24px;
+    }
+}
+
 .form-field {
     font-style: 20px;
     font-weight: 300;

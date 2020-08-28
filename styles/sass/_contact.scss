@@ -1,0 +1,92 @@
+@import 'colors';
+
+h2.page-title {
+    color: $sunnyyellow;
+    width: 100%;
+    align-self: flex-start;
+}
+
+.subpage.main-heading {
+    grid-column: 1;
+
+    /* override style from main; TODO: separate these styles */
+    padding: unset;
+    width: 100%;
+    align-self: unset;
+}
+
+
+.content-grid {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    grid-template-columns: 3fr 7fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.contact-page {
+    background: $offwhite;
+}
+.contact-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sidebar area */
+.sidebar {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+
+    a {
+        color: green;
+    }
+}
+
+.contact-info {
+    .email-address {
+        padding: 20px 0;
+    }
+}
+
+
+/* form area */
+.contact-form {
+    background: #ffffff;
+    box-shadow: -20px 20px 0 0 $sunnyyellow;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    form > * {
+        margin-bottom: 20px;
+    }
+
+    fieldset {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            border: 0;
+            border-bottom: 2px solid $green;
+            flex-basis: 45%;
+        }
+    }
+
+    textarea {
+        border: 0;
+        border-bottom: 2px solid $green;
+        min-height: 300px;
+    }
+}
