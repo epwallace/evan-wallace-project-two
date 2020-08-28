@@ -67,6 +67,9 @@ h1 {
 }
 
 .top-bar {
+    /* navigation bar display properties */
+    padding: 20px 0;
+
     ul {
         display: flex;
         align-items: center;
@@ -74,15 +77,22 @@ h1 {
         width: 50%;
     }
 
-    li {
-        &:first-child a {
+    /* navigation bar link styling*/
+    a {
+        color: $offwhite;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        &.logo {
             font-size: 36px;
             text-transform: unset;
         }
 
-        a {
-            font-size: 20px;
-            text-transform: uppercase;
+        &:hover,
+        &:focus,
+        &.active {
+            color: $sunnyyellow;
+            font-weight: bold;
         }
     }
 }
