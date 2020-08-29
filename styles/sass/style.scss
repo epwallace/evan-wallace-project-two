@@ -103,6 +103,7 @@ h1 {
         padding: 20px;
     }
 }
+
 .flower-content {
     display: flex;
     justify-content: space-between;
@@ -184,16 +185,18 @@ button {
     grid-template-rows: 80px 200px;
     grid-gap: 0px 10px;
 
-  span, h3 {
-      align-self: center;
-  }
+    span,
+    h3 {
+        align-self: center;
+    }
 
-  p {
-      grid-column: 2 /span 1;
-  }
+    p {
+        grid-column: 2 /span 1;
+    }
 }
 
-.fa-stack-1x, .fa-leaf {
+.fa-stack-1x,
+.fa-leaf {
     color: $black !important;
 }
 
@@ -214,13 +217,15 @@ button {
     justify-content: space-between;
     padding: 100px 0;
 }
+
 .founder-content img {
     box-shadow: 20px 20px 0 0 $sunnyyellow;
 }
+
 .founder-text {
     display: flex;
     flex-direction: column;
-    flex-basis: 70%; 
+    flex-basis: 70%;
     justify-content: space-between;
 }
 
@@ -240,5 +245,3 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-
-
