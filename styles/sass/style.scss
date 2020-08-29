@@ -21,9 +21,11 @@ a {
 }
 
 header {
-    /* background */
-    background: url(../assets/home-image-1.jpg);
+    /* header background */
     background-size: cover;
+    &.blog-header { background: url(../assets/blog-header-1.jpg); }
+    &.contact-header { background: url(../assets/contact-header-1.jpg); }
+    &.main-header { background: url(../assets/home-image-1.jpg); } 
 
     /* dimensions */
     height: 60vh;
