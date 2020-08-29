@@ -1,11 +1,5 @@
 @import 'colors';
 
-h2.page-title {
-    color: $sunnyyellow;
-    width: 100%;
-    align-self: flex-start;
-}
-
 .subpage.main-heading {
     grid-column: 1;
 
@@ -17,20 +11,21 @@ h2.page-title {
 
 
 .content-grid {
+    /* grid properties */
     display: grid;
-    grid-template-rows: 2fr 3fr;
+    grid-template-rows: 200px 3fr;
     grid-template-columns: 3fr 7fr;
+    grid-gap: 100px;
+
+    /* positioning */
     width: 80%;
     margin: 0 auto;
+    position: relative;
+    top: -200px;
 }
-
 
 .contact-page {
     background: $offwhite;
-}
-.contact-area {
-    display: flex;
-    justify-content: space-between;
 }
 
 /* sidebar area */
@@ -62,15 +57,16 @@ h2.page-title {
     box-shadow: -20px 20px 0 0 $sunnyyellow;
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
+    padding: 30px;
 
     form {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 100%;
     }
 
     form > * {
-        margin-bottom: 20px;
     }
 
     fieldset {
@@ -80,13 +76,14 @@ h2.page-title {
         input {
             border: 0;
             border-bottom: 2px solid $green;
+            padding: 10px 20px;
             flex-basis: 45%;
         }
     }
 
     textarea {
-        border: 0;
-        border-bottom: 2px solid $green;
+        border: 2px solid $green;
         min-height: 300px;
+        padding: 10px 20px;
     }
 }
