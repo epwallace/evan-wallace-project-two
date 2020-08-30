@@ -1,0 +1,156 @@
+@import 'colors';
+
+/* TODO: make this consistent across files? */
+body {
+    background: $offwhite;
+}
+
+/* header styles */
+.blog-header {
+    /* TODO: find out where this repeat is coming from */
+    background-repeat: no-repeat !important;
+}
+
+.blog-header .top-bar {
+    background-color: #040a0c;
+    padding: 10px 10vw;
+}
+
+/* TODO: this was styled as a grid in contact page; make consistent */
+main {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -200px;
+}
+
+/* TODO: refactor names like blog-left-section and blog-right-section */
+/* sidebar area */
+.blog-left-section {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+    .subpage-title {
+        padding-left: 10vw;
+        margin-bottom: 200px;
+    }
+    
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-left: 10vw;
+}
+
+.sidebar-image {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    img {
+        position: relative;
+        top: -20px;
+        left: -20px;
+    }
+}
+
+/* TODO: rename/refactor; "About Planted' is currently under the .recent-posts style */
+.recent-posts {
+    align-self: center;
+    padding: 20px;
+
+    li {
+
+        padding: 5px 0;
+    }
+    li a {
+        font-family: $roboto;
+        text-decoration: none;
+        color: $black;
+    }
+
+    /* customize 'bullet' appearance by using pseudoelements */
+    li:before {
+        content: '•';
+        color: forestgreen;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+
+/* blog + comment area */
+.blog-right-section {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.post-image {
+    width: 100%;
+    align-self: flex-end;
+
+    img {
+        width: calc(100% - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+        box-shadow: -20px 20px 0 0 $sunnyyellow;
+    }
+}
+
+.post-container {
+    border-right: 0;
+    border-top: 0;
+}
+
+.post-text {
+    width: 85%;
+    
+    border: 5px solid $sunnyyellow;
+    border-top: 0;
+    border-right: 0;
+    padding: 40px;
+}
+
+.post-title {
+    text-align: left;
+}
+
+.post-metadata {
+    color: forestgreen;
+    padding-left: 10px;
+
+}
+
+.post-content {
+    padding-left: 10px;
+}
+
+
+.comment-section {
+    padding: 10px;
+
+    h3 {
+        padding: 50px 0;
+    }
+}
+
+.comment {
+    display: flex;
+    padding-left: 5px;
+}
+
+.comment-text {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+
+/* TODO: refactor comment-form and contact-form and remove !important */
+.comment-form {
+    box-shadow: none !important;
+}
+
+/* TODO: style and structure form analogously across blog + contact pages */

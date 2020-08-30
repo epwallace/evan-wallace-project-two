@@ -57,8 +57,14 @@ button {
     text-align: center;
 }
 
-.blog-date {
-    font-style: 20px;
+.post-metadata {
+    color: forestgreen;
+    font-style: italic;
+}
+
+.comment-metadata {
+    color: forestgreen;
+    font-size: 20px;
     font-weight: bold;
     line-height: 32px;
 }
