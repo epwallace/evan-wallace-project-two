@@ -441,13 +441,6 @@ button {
 /* TODO: refactor names like blog-left-section and blog-right-section */
 /* sidebar area */
 .blog-left-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 35%;
 }
 
@@ -456,7 +449,7 @@ button {
   margin-bottom: 200px;
 }
 
-.sidebar {
+.blog-page .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +464,6 @@ button {
 .sidebar-image {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 20px;
 }
 
 .sidebar-image img {
@@ -480,26 +472,33 @@ button {
   left: -20px;
 }
 
-/* TODO: rename/refactor; "About Planted' is currently under the .recent-posts style */
-.recent-posts {
+.sidebar-text {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   padding: 20px;
+  padding-top: none;
   /* customize 'bullet' appearance by using pseudoelements */
 }
 
-.recent-posts li {
+.sidebar-text .about-planted {
+  margin-bottom: 40px;
+}
+
+.sidebar-text li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5px 0;
 }
 
-.recent-posts li a {
+.sidebar-text li a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #2c2c2c;
 }
 
-.recent-posts li:before {
+.sidebar-text li:before {
   content: '•';
   color: forestgreen;
   vertical-align: middle;
@@ -814,6 +813,10 @@ h1 emph {
 .subpage .top-bar {
   background-color: #040a0c;
   padding: 10px 10vw;
+}
+
+html {
+  font-size: 125%;
 }
 
 a {

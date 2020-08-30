@@ -12,18 +12,15 @@
 /* TODO: refactor names like blog-left-section and blog-right-section */
 /* sidebar area */
 .blog-left-section {
-    display: flex;
-    flex-direction: column;
     width: 35%;
 
     .subpage-title {
         padding-left: 10vw;
         margin-bottom: 200px;
     }
-    
 }
 
-.sidebar {
+.blog-page .sidebar {
     display: flex;
     flex-direction: column;
     background: white;
@@ -32,7 +29,6 @@
 
 .sidebar-image {
     align-self: flex-end;
-    margin-bottom: 20px;
     img {
         position: relative;
         top: -20px;
@@ -40,13 +36,17 @@
     }
 }
 
-/* TODO: rename/refactor; "About Planted' is currently under the .recent-posts style */
-.recent-posts {
+.sidebar-text {
     align-self: center;
     padding: 20px;
+    padding-top: none;
+
+    .about-planted {
+        margin-bottom: 40px;
+    }
 
     li {
-
+        display: flex;
         padding: 5px 0;
     }
     li a {
