@@ -425,24 +425,9 @@ button {
   line-height: 32px;
 }
 
-/* TODO: make this consistent across files? */
-body {
-  background: #f0efed;
-}
-
 /* header styles */
-.blog-header {
-  /* TODO: find out where this repeat is coming from */
-  background-repeat: no-repeat !important;
-}
-
-.blog-header .top-bar {
-  background-color: #040a0c;
-  padding: 10px 10vw;
-}
-
 /* TODO: this was styled as a grid in contact page; make consistent */
-main {
+.blog-page main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,6 +559,7 @@ main {
 }
 
 .comment-section {
+  width: 85%;
   padding: 10px;
 }
 
@@ -601,12 +587,15 @@ main {
 }
 
 /* TODO: refactor comment-form and contact-form and remove !important */
-.comment-form {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+/* TODO: style and structure form analogously across blog + contact pages */
+.blog-page .communication-form {
+  padding: 0;
 }
 
-/* TODO: style and structure form analogously across blog + contact pages */
+.blog-page .communication-form textarea {
+  margin: 20px 0;
+}
+
 .subpage.main-heading {
   -ms-grid-column: 1;
   grid-column: 1;
@@ -667,10 +656,7 @@ main {
 }
 
 /* form area */
-.contact-form {
-  background: #ffffff;
-  -webkit-box-shadow: -20px 20px 0 0 #f8e71c;
-          box-shadow: -20px 20px 0 0 #f8e71c;
+.communication-form {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / span 1;
@@ -680,7 +666,7 @@ main {
   padding: 30px;
 }
 
-.contact-form form {
+.communication-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,7 +680,7 @@ main {
   height: 100%;
 }
 
-.contact-form fieldset {
+.communication-form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,7 +689,8 @@ main {
           justify-content: space-between;
 }
 
-.contact-form fieldset input {
+.communication-form fieldset input {
+  background: inherit;
   border: 0;
   border-bottom: 2px solid #0e902d;
   padding: 10px 20px;
@@ -711,22 +698,20 @@ main {
       flex-basis: 45%;
 }
 
-.contact-form textarea {
+.communication-form textarea {
+  background: inherit;
   border: 2px solid #0e902d;
   min-height: 300px;
   padding: 10px 20px;
 }
 
-a {
-  text-decoration: none;
+.contact-page .communication-form {
+  background: #ffffff;
+  -webkit-box-shadow: 20px 20px 0 0 #f8e71c;
+          box-shadow: 20px 20px 0 0 #f8e71c;
 }
 
-.wrapper {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
+/* styles for default header */
 header {
   /* header background */
   background-size: cover;
@@ -736,31 +721,15 @@ header {
   width: 100vw;
 }
 
-header.blog-header {
-  background: url(../assets/blog-header-1.jpg);
-}
-
-header.contact-header {
-  background: url(../assets/contact-header-1.jpg);
-}
-
 header.main-header {
-  background: url(../assets/home-image-1.jpg);
+  background-image: url(../assets/home-image-1.jpg);
 }
 
 header img {
   display: none;
 }
 
-h1 {
-  color: #f0efed;
-  word-spacing: 9999rem;
-}
-
-h1 emph {
-  color: #f8e71c;
-}
-
+/* flex container for all header elements */
 .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,10 +744,19 @@ h1 emph {
   height: 100%;
 }
 
+h1 {
+  color: #f0efed;
+  word-spacing: 9999rem;
+}
+
+h1 emph {
+  color: #f8e71c;
+}
+
+/* navigation bar styling */
 .top-bar {
-  /* navigation bar display properties */
   padding: 20px 0;
-  /* navigation bar link styling*/
+  /* navigation link styling*/
 }
 
 .top-bar ul {
@@ -820,8 +798,39 @@ h1 emph {
       align-self: center;
 }
 
-.intro {
+/* styles for headers on subpages */
+.subpage header {
+  background-repeat: no-repeat;
+}
+
+.subpage header.blog-header {
+  background-image: url(../assets/blog-header-1.jpg);
+}
+
+.subpage header.contact-header {
+  background-image: url(../assets/contact-header-1.jpg);
+}
+
+.subpage .top-bar {
+  background-color: #040a0c;
+  padding: 10px 10vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
   background-color: #f0efed;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
   padding: 100px 0;
 }
 
@@ -847,6 +856,7 @@ h1 emph {
 }
 
 .flower-content {
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -995,10 +1005,6 @@ button {
   color: #f8e71c;
 }
 
-.founder {
-  background-color: #f0efed;
-}
-
 .founder-banner {
   width: 100vw;
 }
@@ -1034,6 +1040,10 @@ button {
 }
 
 .gallery {
+  background-color: white;
+}
+
+.gallery-images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1043,7 +1053,7 @@ button {
   padding: 100px 0;
 }
 
-.gallery img {
+.gallery-images img {
   width: 30%;
 }
 

@@ -52,9 +52,7 @@
 
 
 /* form area */
-.contact-form {
-    background: #ffffff;
-    box-shadow: -20px 20px 0 0 $sunnyyellow;
+.communication-form {
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
     padding: 30px;
@@ -66,14 +64,12 @@
         height: 100%;
     }
 
-    form > * {
-    }
-
     fieldset {
         display: flex;
         justify-content: space-between;
 
         input {
+            background: inherit;
             border: 0;
             border-bottom: 2px solid $green;
             padding: 10px 20px;
@@ -82,8 +78,14 @@
     }
 
     textarea {
+        background: inherit;
         border: 2px solid $green;
         min-height: 300px;
         padding: 10px 20px;
     }
+}
+
+.contact-page .communication-form {
+    background: #ffffff;
+    box-shadow: 20px 20px 0 0 $sunnyyellow;
 }

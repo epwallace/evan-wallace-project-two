@@ -1,23 +1,8 @@
 @import 'colors';
 
-/* TODO: make this consistent across files? */
-body {
-    background: $offwhite;
-}
-
 /* header styles */
-.blog-header {
-    /* TODO: find out where this repeat is coming from */
-    background-repeat: no-repeat !important;
-}
-
-.blog-header .top-bar {
-    background-color: #040a0c;
-    padding: 10px 10vw;
-}
-
 /* TODO: this was styled as a grid in contact page; make consistent */
-main {
+.blog-page main {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -129,6 +114,7 @@ main {
 
 
 .comment-section {
+    width: 85%;
     padding: 10px;
 
     h3 {
@@ -149,8 +135,10 @@ main {
 }
 
 /* TODO: refactor comment-form and contact-form and remove !important */
-.comment-form {
-    box-shadow: none !important;
-}
-
 /* TODO: style and structure form analogously across blog + contact pages */
+.blog-page .communication-form {
+    padding: 0;
+    textarea {
+        margin: 20px 0;
+    }
+}

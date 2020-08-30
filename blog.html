@@ -12,7 +12,7 @@
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <script src="https://kit.fontawesome.com/65f3f78201.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="subpage blog-page">
     <!-- TODO: add skip link -->
     <header class="blog-header">
         <div class="header-content">
@@ -110,18 +110,21 @@
                     </div>
                 </div> 
 
-                <form class="contact-form comment-form">
-                    <fieldset class="submittor">
-                        <label for="name" class="visuallyHidden">Name</label>
-                        <input type="email" placeholder="Name" id="name">
-                        <label for="email" class="visuallyHidden">Email</label>
-                        <input type="email" placeholder="Email" id="email">
-                    </fieldset>
+                <div class="communication-form">
+                    <form>
+                        <fieldset class="user-info">
+                            <label for="name" class="visuallyHidden">Name</label>
+                            <input type="email" placeholder="Name" id="name">
 
-                    <textarea name="comment" placeholder="Comment"></textarea>
-
-                    <button type="submit">Post Comment</button>
-                </form>
+                            <label for="email" class="visuallyHidden">Email</label>
+                            <input type="email" placeholder="Email" id="email">
+                        </fieldset>
+    
+                        <textarea name="comment" placeholder="Comment"></textarea>
+    
+                        <button type="submit">Post Comment</button>
+                    </form>
+                </div>
             </section>
         </div>
     </main>

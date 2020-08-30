@@ -3,6 +3,7 @@
 @import 'blog';
 @import 'contact';
 @import 'colors';
+@import 'header';
 
 @mixin text-column($alignment) {
     display: flex;
@@ -15,84 +16,17 @@ a {
     text-decoration: none;
 }
 
+body {
+    background-color: $offwhite;
+}
+
 .wrapper {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-header {
-    /* header background */
-    background-size: cover;
-    &.blog-header { background: url(../assets/blog-header-1.jpg); }
-    &.contact-header { background: url(../assets/contact-header-1.jpg); }
-    &.main-header { background: url(../assets/home-image-1.jpg); } 
-
-    /* dimensions */
-    height: 60vh;
-    min-height: 500px;
-    width: 100vw;
-
-    img {
-        display: none;
-    }
-}
-
-h1 {
-    color: $offwhite;
-    word-spacing: 9999rem;
-
-    emph {
-        color: $sunnyyellow;
-    }
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.top-bar {
-    /* navigation bar display properties */
-    padding: 20px 0;
-
-    ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 50%;
-    }
-
-    /* navigation bar link styling*/
-    a {
-        color: $offwhite;
-        font-size: 20px;
-        text-transform: uppercase;
-
-        &.logo {
-            font-size: 36px;
-            text-transform: unset;
-        }
-
-        &:hover,
-        &:focus,
-        &.active {
-            color: $sunnyyellow;
-            font-weight: bold;
-        }
-    }
-}
-
-.main-heading {
-    padding: 5vh;
-    width: min-content;
-    align-self: center;
-}
-
 .intro {
-    background-color: $offwhite;
     padding: 100px 0;
 }
 
@@ -106,6 +40,7 @@ h1 {
 }
 
 .flower-content {
+    background-color: white;
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
@@ -205,10 +140,6 @@ button {
     color: $sunnyyellow;
 }
 
-.founder {
-    background-color: $offwhite;
-}
-
 .founder-banner {
     width: 100vw;
 }
@@ -231,6 +162,10 @@ button {
 }
 
 .gallery {
+    background-color: white;
+}
+
+.gallery-images {
     display: flex;
     justify-content: space-between;
     padding: 100px 0;

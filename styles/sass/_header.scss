@@ -1,0 +1,86 @@
+@import 'colors';
+
+/* styles for default header */
+header {
+    /* header background */
+    background-size: cover;
+    &.main-header { background-image: url(../assets/home-image-1.jpg); } 
+
+    /* dimensions */
+    height: 60vh;
+    min-height: 500px;
+    width: 100vw;
+
+    img {
+        display: none;
+    }
+}
+
+/* flex container for all header elements */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h1 {
+    color: $offwhite;
+    word-spacing: 9999rem;
+
+    emph {
+        color: $sunnyyellow;
+    }
+}
+
+/* navigation bar styling */
+.top-bar {
+    padding: 20px 0;
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    /* navigation link styling*/
+    a {
+        color: $offwhite;
+        font-size: 20px;
+        text-transform: uppercase;
+
+        &.logo {
+            font-size: 36px;
+            text-transform: unset;
+        }
+
+        &:hover,
+        &:focus,
+        &.active {
+            color: $sunnyyellow;
+            font-weight: bold;
+        }
+    }
+}
+
+.main-heading {
+    padding: 5vh;
+    width: min-content;
+    align-self: center;
+}
+
+/* styles for headers on subpages */
+.subpage {
+    header {
+        background-repeat: no-repeat;
+
+        &.blog-header { background-image: url(../assets/blog-header-1.jpg); }
+        &.contact-header { background-image: url(../assets/contact-header-1.jpg); }
+    }
+
+    .top-bar {
+        background-color: #040a0c;
+        padding: 10px 10vw;
+    }
+}

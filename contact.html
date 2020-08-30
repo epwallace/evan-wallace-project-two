@@ -12,10 +12,10 @@
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <script src="https://kit.fontawesome.com/65f3f78201.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="subpage contact-page">
     <!-- TODO: add skip link -->
     <header class="contact-header">
-        <div class="wrapper header-content">
+        <div class="header-content">
                 <nav class="top-bar">
                     <ul>
                         <li>
@@ -57,15 +57,18 @@
             </ul>
         </div>
 
-        <section class="contact-form">
+        <section class="communication-form">
             <form>
-                <fieldset class="submittor">
+                <fieldset class="user-info">
                     <label for="name" class="visuallyHidden">Name</label>
                     <input type="email" placeholder="Name" id="name">
+
                     <label for="email" class="visuallyHidden">Email</label>
                     <input type="email" placeholder="Email" id="email">
                 </fieldset>
+
                 <textarea name="message" placeholder="Message"></textarea>
+
                 <button type="submit">Submit</button>
             </form>
         </section>
