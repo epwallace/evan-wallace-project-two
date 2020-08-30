@@ -1,40 +1,13 @@
 @import 'colors';
 
-.subpage.main-heading {
-    grid-column: 1;
-
-    /* override style from main; TODO: separate these styles */
-    padding: unset;
-    width: 100%;
-    align-self: unset;
-}
-
-
-.content-grid {
-    /* grid properties */
-    display: grid;
-    grid-template-rows: 200px 3fr;
-    grid-template-columns: 3fr 7fr;
-    grid-gap: 100px;
-
-    /* positioning */
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-    top: -200px;
-}
-
-.contact-page {
-    background: $offwhite;
-}
-
 /* sidebar area */
 .sidebar {
-    grid-column: 1 / span 1;
+    grid-column: 2 / span 1;
     grid-row: 2 / span 1;
 }
 
 .socials {
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     width: 45%;
@@ -51,41 +24,11 @@
 }
 
 
-/* form area */
-.communication-form {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
-    padding: 30px;
-
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 100%;
-    }
-
-    fieldset {
-        display: flex;
-        justify-content: space-between;
-
-        input {
-            background: inherit;
-            border: 0;
-            border-bottom: 2px solid $green;
-            padding: 10px 20px;
-            flex-basis: 45%;
-        }
-    }
-
-    textarea {
-        background: inherit;
-        border: 2px solid $green;
-        min-height: 300px;
-        padding: 10px 20px;
-    }
-}
-
+/* tweak generic form for blog-sepecific styles */
 .contact-page .communication-form {
+    grid-column: 3;
+    grid-row: 1 / span 3;;
     background: #ffffff;
-    box-shadow: 20px 20px 0 0 $sunnyyellow;
+    box-shadow: -20px 20px 0 0 $sunnyyellow;
+    margin-left: 20px;
 }

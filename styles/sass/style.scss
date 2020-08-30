@@ -90,10 +90,16 @@ body {
 }
 
 button {
+
     background-color: $green;
     color: $offwhite;
     border: 0;
     display: block;
+    
+    /* figure out what's overriding this */
+    a {
+        font-family: $josefin !important;
+    }
 }
 
 .bullet-points {
@@ -185,3 +191,57 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* SUBPAGE STYLES */
+/* grid container for the main section */
+.content-grid {
+    /* grid properties */
+    display: grid;
+    grid-template-rows: 200px auto auto auto;
+    grid-template-columns: 10vw 24fr 56fr 10vw;
+
+    /* positioning */
+    position: relative;
+    top: -200px;
+    width: 100vw;
+}
+
+.subpage-title {
+    grid-column: 2 / span 1;
+    margin-bottom: 200px;
+}
+
+.communication-form {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 2;
+        padding: 30px;
+        position: relative;
+        top: -20px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        fieldset {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                background: inherit;
+                border: 0;
+                border-bottom: 2px solid $green;
+                padding: 10px 20px;
+                flex-basis: 45%;
+            }
+        }
+
+        textarea {
+            background: inherit;
+            border: 2px solid $green;
+            min-height: 300px;
+            padding: 10px 20px;
+        }
+    }

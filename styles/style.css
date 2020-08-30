@@ -385,7 +385,8 @@ h3 {
 }
 
 button {
-  font-style: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 32px;
@@ -425,57 +426,37 @@ button {
   line-height: 32px;
 }
 
-/* header styles */
-/* TODO: this was styled as a grid in contact page; make consistent */
-.blog-page main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  top: -200px;
-}
-
-/* TODO: refactor names like blog-left-section and blog-right-section */
 /* sidebar area */
-.blog-left-section {
-  width: 35%;
+.side-image {
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+  padding-top: 100px;
 }
 
-.blog-left-section .subpage-title {
-  padding-left: 10vw;
-  margin-bottom: 200px;
+.side-image img {
+  width: 100%;
+  position: relative;
+  left: -20px;
+  -webkit-box-shadow: 40px 20px 0 -20px white;
+          box-shadow: 40px 20px 0 -20px white;
 }
 
 .blog-page .sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: white;
-  margin-left: 10vw;
-}
-
-.sidebar-image {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.sidebar-image img {
-  position: relative;
-  top: -20px;
-  left: -20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
 }
 
 .sidebar-text {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  background-color: white;
+  margin-left: 10vw;
   padding: 20px;
   padding-top: none;
   /* customize 'bullet' appearance by using pseudoelements */
@@ -505,9 +486,15 @@ button {
   margin-right: 10px;
 }
 
-/* blog + comment area */
-.blog-right-section {
-  width: 60%;
+/* container for the entire blog + comment area */
+.blog-container {
+  padding-left: 100px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  grid-row: 1 / span 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,6 +504,7 @@ button {
           flex-direction: column;
 }
 
+/* blog post styles */
 .post-image {
   width: 100%;
   -ms-flex-item-align: end;
@@ -557,12 +545,13 @@ button {
   padding-left: 10px;
 }
 
-.comment-section {
+/* blog comment section styles */
+.comments-container {
   width: 85%;
   padding: 10px;
 }
 
-.comment-section h3 {
+.comments-container h3 {
   padding: 50px 0;
 }
 
@@ -585,8 +574,7 @@ button {
   padding-left: 20px;
 }
 
-/* TODO: refactor comment-form and contact-form and remove !important */
-/* TODO: style and structure form analogously across blog + contact pages */
+/* tweak generic form for blog-sepecific styles */
 .blog-page .communication-form {
   padding: 0;
 }
@@ -595,48 +583,18 @@ button {
   margin: 20px 0;
 }
 
-.subpage.main-heading {
-  -ms-grid-column: 1;
-  grid-column: 1;
-  /* override style from main; TODO: separate these styles */
-  padding: unset;
-  width: 100%;
-  -ms-flex-item-align: unset;
-      -ms-grid-row-align: unset;
-      align-self: unset;
-}
-
-.content-grid {
-  /* grid properties */
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 200px 3fr;
-      grid-template-rows: 200px 3fr;
-  -ms-grid-columns: 3fr 7fr;
-      grid-template-columns: 3fr 7fr;
-  grid-gap: 100px;
-  /* positioning */
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  top: -200px;
-}
-
-.contact-page {
-  background: #f0efed;
-}
-
 /* sidebar area */
 .sidebar {
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 1;
-  grid-column: 1 / span 1;
+  grid-column: 2 / span 1;
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / span 1;
 }
 
 .socials {
+  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,60 +612,17 @@ button {
   padding: 20px 0;
 }
 
-/* form area */
-.communication-form {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / span 1;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / span 2;
-  padding: 30px;
-}
-
-.communication-form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 100%;
-}
-
-.communication-form fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.communication-form fieldset input {
-  background: inherit;
-  border: 0;
-  border-bottom: 2px solid #0e902d;
-  padding: 10px 20px;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-}
-
-.communication-form textarea {
-  background: inherit;
-  border: 2px solid #0e902d;
-  min-height: 300px;
-  padding: 10px 20px;
-}
-
+/* tweak generic form for blog-sepecific styles */
 .contact-page .communication-form {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
   background: #ffffff;
-  -webkit-box-shadow: 20px 20px 0 0 #f8e71c;
-          box-shadow: 20px 20px 0 0 #f8e71c;
+  -webkit-box-shadow: -20px 20px 0 0 #f8e71c;
+          box-shadow: -20px 20px 0 0 #f8e71c;
+  margin-left: 20px;
 }
 
 /* styles for default header */
@@ -941,6 +856,11 @@ button {
   color: #f0efed;
   border: 0;
   display: block;
+  /* figure out what's overriding this */
+}
+
+button a {
+  font-family: "Josefin Sans", sans-serif !important;
 }
 
 .bullet-points {
@@ -1065,4 +985,78 @@ footer {
   color: #f0efed;
   text-align: center;
   padding: 10px 0;
+}
+
+/* SUBPAGE STYLES */
+/* grid container for the main section */
+.content-grid {
+  /* grid properties */
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px auto auto auto;
+      grid-template-rows: 200px auto auto auto;
+  -ms-grid-columns: 10vw 24fr 56fr 10vw;
+      grid-template-columns: 10vw 24fr 56fr 10vw;
+  /* positioning */
+  position: relative;
+  top: -200px;
+  width: 100vw;
+}
+
+.subpage-title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / span 1;
+  margin-bottom: 200px;
+}
+
+.communication-form {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / span 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+  padding: 30px;
+  position: relative;
+  top: -20px;
+}
+
+.communication-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.communication-form fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.communication-form fieldset input {
+  background: inherit;
+  border: 0;
+  border-bottom: 2px solid #0e902d;
+  padding: 10px 20px;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.communication-form textarea {
+  background: inherit;
+  border: 2px solid #0e902d;
+  min-height: 300px;
+  padding: 10px 20px;
 }

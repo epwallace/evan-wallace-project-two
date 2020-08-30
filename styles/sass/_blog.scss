@@ -1,43 +1,28 @@
 @import 'colors';
 
-/* header styles */
-/* TODO: this was styled as a grid in contact page; make consistent */
-.blog-page main {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: -200px;
-}
-
-/* TODO: refactor names like blog-left-section and blog-right-section */
 /* sidebar area */
-.blog-left-section {
-    width: 35%;
+.side-image {
+    width: 100%;
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    padding-top: 100px;
 
-    .subpage-title {
-        padding-left: 10vw;
-        margin-bottom: 200px;
+    img {
+        width: 100%;
+        position: relative;
+        left: -20px;
+        box-shadow: 40px 20px 0 -20px white;
     }
 }
 
 .blog-page .sidebar {
-    display: flex;
-    flex-direction: column;
-    background: white;
-    margin-left: 10vw;
-}
-
-.sidebar-image {
-    align-self: flex-end;
-    img {
-        position: relative;
-        top: -20px;
-        left: -20px;
-    }
+    grid-column: 1 / span 2;
+    grid-row: 3;
 }
 
 .sidebar-text {
-    align-self: center;
+    background-color: white;
+    margin-left: 10vw;
     padding: 20px;
     padding-top: none;
 
@@ -64,14 +49,16 @@
     }
 }
 
-/* blog + comment area */
-.blog-right-section {
-    width: 60%;
-
+/* container for the entire blog + comment area */
+.blog-container {
+    padding-left: 100px;
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 4;
     display: flex;
     flex-direction: column;
 }
 
+/* blog post styles */
 .post-image {
     width: 100%;
     align-self: flex-end;
@@ -112,8 +99,8 @@
     padding-left: 10px;
 }
 
-
-.comment-section {
+/* blog comment section styles */
+.comments-container {
     width: 85%;
     padding: 10px;
 
@@ -134,8 +121,7 @@
     padding-left: 20px;
 }
 
-/* TODO: refactor comment-form and contact-form and remove !important */
-/* TODO: style and structure form analogously across blog + contact pages */
+/* tweak generic form for blog-sepecific styles */
 .blog-page .communication-form {
     padding: 0;
     textarea {
