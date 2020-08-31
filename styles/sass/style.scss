@@ -24,10 +24,12 @@ strong {
     font-weight: bold;
 }
 
-/* buttons and global focus effects */
+/* buttons and global focus effects 
+     - mixing <button> and <a> causes Tab to select the same element twice
+     - .button-link gets around this issue */
 button,
-.link-button {
-    // button funt
+.link-button { 
+    // button font
     font-family: $josefin;
     background-color: $green;
     color: $offwhite;
@@ -65,6 +67,7 @@ a.skip-link:active {
     top: 0;
 }
 
+
 body {
     background-color: $offwhite;
 }
@@ -76,12 +79,20 @@ body {
     margin: 0 auto;
 }
 
+/* utility style for hiding objects on small screens */
 .mobile-only {
     display: none;
 }
 
+@media (max-width: 800px) {
+    .mobile-only {
+        display: unset;
+    }
+}
+
+/* intro section ("What is Planted?") */
 .intro {
-    padding: 100px 0;
+    padding: 150px 0;
 }
 
 .intro-text {
@@ -93,6 +104,7 @@ body {
     }
 }
 
+/* the area with the flower pictures, for lack of a better name */
 .flower-content {
     background-color: white;
     display: flex;
@@ -140,7 +152,7 @@ body {
 }
 
 
-
+/* section with font awesome "bullet points" */
 .bullet-points {
     background: $offwhite;
     padding: 100px 0;
@@ -180,7 +192,7 @@ body {
     }
 }
 
-/* using font awesome icon stacking for circular backgrounds */
+// this method of stacking font awesome icons is documented at fontawesome.com
 .fa-stack-1x,
 .fa-leaf {
     color: $black !important;
@@ -222,6 +234,7 @@ body {
     padding-left: 40px;
 }
 
+/* image gallery section */
 .gallery {
     background-color: white;
 }
@@ -264,6 +277,7 @@ footer {
 }
 
 .subpage-title {
+    color: $sunnyyellow;
     grid-column: 2 / span 1;
     margin-bottom: 200px;
     min-width: 260px;
@@ -309,6 +323,7 @@ footer {
     }
 }
 
+/* media queries for responsive design */
 @media (max-width: 1220px) {
     .header-pic {
         display: none;
@@ -396,8 +411,9 @@ footer {
             display: unset;
         }
     }
-    /* this hidden checkbox type of navigation was inspired by Elliot Dickison's codepen:
-    https://codepen.io/elliotdickison/pen/KhGqk */
+
+    // this hidden-checkboxy approach to a nav drawer was inspired by Elliot Dickison's codepen:
+    // https://codepen.io/elliotdickison/pen/KhGqk
     .mobile-nav {
         display: unset;
         height: 200px;
@@ -451,8 +467,6 @@ footer {
     .content-tile {
         width: 100%;
 
-
-
         .section-text {
             width: 100%;
             padding: 20px;
@@ -471,8 +485,6 @@ footer {
             }
         }
     }
-
-
 
 
     .founder-banner {

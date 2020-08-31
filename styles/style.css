@@ -371,7 +371,6 @@ h2 {
 }
 
 .subpage-title {
-  color: #f8e71c;
   font-size: 80px;
   font-weight: bold;
   line-height: 92px;
@@ -394,12 +393,10 @@ button {
 }
 
 .post-metadata {
-  color: forestgreen;
   font-style: italic;
 }
 
 .comment-metadata {
-  color: forestgreen;
   font-size: 20px;
   font-weight: bold;
   line-height: 32px;
@@ -582,6 +579,10 @@ button {
           flex-direction: column;
   padding-bottom: 100px;
   padding-left: 20px;
+}
+
+.comment-metadata {
+  color: forestgreen;
 }
 
 .comment-body {
@@ -900,7 +901,9 @@ strong {
   font-weight: bold;
 }
 
-/* buttons and global focus effects */
+/* buttons and global focus effects 
+     - mixing <button> and <a> causes Tab to select the same element twice
+     - .button-link gets around this issue */
 button,
 .link-button {
   font-family: "Josefin Sans", sans-serif;
@@ -951,12 +954,20 @@ body {
   margin: 0 auto;
 }
 
+/* utility style for hiding objects on small screens */
 .mobile-only {
   display: none;
 }
 
+@media (max-width: 800px) {
+  .mobile-only {
+    display: unset;
+  }
+}
+
+/* intro section ("What is Planted?") */
 .intro {
-  padding: 100px 0;
+  padding: 150px 0;
 }
 
 .intro-text {
@@ -980,6 +991,7 @@ body {
   padding: 20px;
 }
 
+/* the area with the flower pictures, for lack of a better name */
 .flower-content {
   background-color: white;
   display: -webkit-box;
@@ -1058,6 +1070,7 @@ body {
   width: 80%;
 }
 
+/* section with font awesome "bullet points" */
 .bullet-points {
   background: #f0efed;
   padding: 100px 0;
@@ -1114,7 +1127,6 @@ body {
   grid-column: 2 /span 1;
 }
 
-/* using font awesome icon stacking for circular backgrounds */
 .fa-stack-1x,
 .fa-leaf {
   color: #2c2c2c !important;
@@ -1171,6 +1183,7 @@ body {
   padding-left: 40px;
 }
 
+/* image gallery section */
 .gallery {
   background-color: white;
 }
@@ -1219,6 +1232,7 @@ footer {
 }
 
 .subpage-title {
+  color: #f8e71c;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / span 1;
@@ -1282,6 +1296,7 @@ footer {
   width: 100%;
 }
 
+/* media queries for responsive design */
 @media (max-width: 1220px) {
   .header-pic {
     display: none;
@@ -1357,8 +1372,6 @@ footer {
   .top-bar li.hamburger-button {
     display: unset;
   }
-  /* this hidden checkbox type of navigation was inspired by Elliot Dickison's codepen:
-    https://codepen.io/elliotdickison/pen/KhGqk */
   .mobile-nav {
     display: unset;
     height: 200px;

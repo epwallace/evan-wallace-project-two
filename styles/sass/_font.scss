@@ -1,5 +1,3 @@
-@import 'colors';
-
 // fonts
 $josefin: 'Josefin Sans', sans-serif;
 $roboto: 'Roboto', sans-serif;
@@ -36,7 +34,6 @@ h2 {
 }
 
 .subpage-title {
-    color: $sunnyyellow;
     font-size: 80px;
     font-weight: bold;
     line-height: 92px;
@@ -59,12 +56,10 @@ button {
 }
 
 .post-metadata {
-    color: forestgreen;
     font-style: italic;
 }
 
 .comment-metadata {
-    color: forestgreen;
     font-size: 20px;
     font-weight: bold;
     line-height: 32px;
