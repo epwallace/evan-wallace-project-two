@@ -343,7 +343,9 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-body p, input, textarea {
+body p,
+input,
+textarea {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 32px;

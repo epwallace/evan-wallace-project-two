@@ -28,7 +28,7 @@ strong {
      - mixing <button> and <a> causes Tab to select the same element twice
      - .button-link gets around this issue */
 button,
-.link-button { 
+.link-button {
     // button font
     font-family: $josefin;
     background-color: $green;
@@ -63,7 +63,7 @@ a.skip-link:active {
     background-color: $sunnyyellow;
     color: $black;
     margin: 200px auto;
-    left:0;
+    left: 0;
     top: 0;
 }
 
@@ -222,7 +222,7 @@ body {
         object-fit: cover;
         position: relative;
         top: -20px;
-    box-shadow: 20px 20px 0 0 $sunnyyellow;
+        box-shadow: 20px 20px 0 0 $sunnyyellow;
     }
 }
 
@@ -328,7 +328,7 @@ footer {
     .header-pic {
         display: none;
     }
-    
+
     .bullet-points {
         padding: 50px 0;
     }
@@ -425,7 +425,7 @@ footer {
 
         #nav-state {
             display: none;
-        } 
+        }
 
         nav {
             visibility: hidden;
@@ -454,7 +454,7 @@ footer {
             }
         }
 
-        #nav-state:checked ~ nav {
+        #nav-state:checked~nav {
             visibility: visible;
         }
     }
@@ -517,7 +517,7 @@ footer {
         width: calc(50vw - 40px);
         height: calc(50vw - 40px);
     }
-    
+
 
     .subpage-title {
         text-align: center;

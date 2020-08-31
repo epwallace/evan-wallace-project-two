@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>planted | contact</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <script src="https://kit.fontawesome.com/65f3f78201.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="subpage contact-page">
     <a href="#main" class="skip-link visuallyHidden">Skip to main content.</a>
     <header class="contact-header">
         <div class="header-content">
-                <nav class="top-bar">
+            <nav class="top-bar">
+                <ul>
+                    <li class="logo">
+                        <a href="./index.html">Planted</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#main">About</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="active">Contact</a>
+                    </li>
+                    <li class="mobile-only hamburger-menu">
+                        <label for="nav-state"><i class="fas fa-bars"></i></label>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-only mobile-nav">
+                <input type="checkbox" id="nav-state" value="link">
+                <nav>
                     <ul>
-                        <li class="logo">
-                            <a href="./index.html">Planted</a>
-                        </li>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./index.html#main">About</a>
-                        </li>
-                        <li>
-                            <a href="./blog.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="./contact.html" class="active">Contact</a>
-                        </li>
-                        <li class="mobile-only hamburger-menu">
-                            <label for="nav-state"><i class="fas fa-bars"></i></label>
-                        </li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#main">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./contact.html" class="active">Contact</a></li>
                     </ul>
                 </nav>
+            </div>
 
-                <div class="mobile-only mobile-nav">
-                    <input type="checkbox" id="nav-state" value="link">
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="#main">About</a></li>
-                            <li><a href="./blog.html">Blog</a></li>
-                            <li><a href="./contact.html" class="active">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <h2 class="mobile-only subpage-title">Get in Touch</h2>
+            <h2 class="mobile-only subpage-title">Get in Touch</h2>
         </div>
     </header>
 
@@ -74,25 +77,26 @@
             </ul>
         </div>
 
-        <section class="communication-form">
-            <form>
-                <fieldset class="user-info">
-                    <label for="name" class="visuallyHidden">Name</label>
-                    <input type="name" placeholder="Name" id="name">
+        <section class=" communication-form">
+                    <form>
+                        <fieldset class="user-info">
+                            <label for="name" class="visuallyHidden">Name</label>
+                            <input type="name" placeholder="Name" id="name">
 
-                    <label for="email" class="visuallyHidden">Email</label>
-                    <input type="email" placeholder="Email" id="email">
-                </fieldset>
+                            <label for="email" class="visuallyHidden">Email</label>
+                            <input type="email" placeholder="Email" id="email">
+                        </fieldset>
 
-                <textarea name="message" placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Message"></textarea>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+                        <button type="submit">Submit</button>
+                    </form>
+                    </section>
     </main>
 
     <footer>
         <p>Copyright &copy; 2020 Juno College</p>
     </footer>
 </body>
+
 </html>

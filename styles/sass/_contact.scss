@@ -27,7 +27,8 @@
 /* tweak generic form for blog-sepecific styles */
 .contact-page .communication-form {
     grid-column: 3;
-    grid-row: 1 / span 3;;
+    grid-row: 1 / span 3;
+    ;
     background: #ffffff;
     box-shadow: -20px 20px 0 0 $sunnyyellow;
     margin-left: 20px;

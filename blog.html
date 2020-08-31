@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>planted | blog</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <script src="https://kit.fontawesome.com/65f3f78201.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="subpage blog-page">
     <a href="#main" class="skip-link visuallyHidden">Skip to main content.</a>
     <header class="blog-header">
         <div class="header-content">
-                <nav class="top-bar">
+            <nav class="top-bar">
+                <ul>
+                    <li class="logo">
+                        <a href="./index.html">Planted</a>
+                    </li>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#main">About</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html" class="active">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                    <li class="mobile-only hamburger-button">
+                        <label for="nav-state"><i class="fas fa-bars"></i></label>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="mobile-only mobile-nav">
+                <input type="checkbox" id="nav-state" value="link">
+                <nav>
                     <ul>
-                        <li class="logo">
-                            <a href="./index.html">Planted</a>
-                        </li>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./index.html#main">About</a>
-                        </li>
-                        <li>
-                            <a href="./blog.html" class="active">Blog</a>
-                        </li>
-                        <li>
-                            <a href="./contact.html">Contact</a>
-                        </li>
-                        <li class="mobile-only hamburger-button">
-                            <label for="nav-state"><i class="fas fa-bars"></i></label>
-                        </li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="#main">About</a></li>
+                        <li><a href="./blog.html" class="active">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
+            </div>
 
-                <div class="mobile-only mobile-nav">
-                    <input type="checkbox" id="nav-state" value="link">
-                    <nav>
-                        <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="#main">About</a></li>
-                            <li><a href="./blog.html" class="active">Blog</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <h2 class="mobile-only subpage-title">Blog</h2>
+            <h2 class="mobile-only subpage-title">Blog</h2>
         </div>
     </header>
 
@@ -66,7 +69,9 @@
             <div class="sidebar-text">
                 <section class="about-planted">
                     <h3>About Planted</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque ex nihil labore voluptas, dolores consectetur accusantium provident. Numquam ipsum porro beatae laudantium animi officia, dignissimos ex in optio ad.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi doloremque ex nihil labore
+                        voluptas, dolores consectetur accusantium provident. Numquam ipsum porro beatae laudantium animi
+                        officia, dignissimos ex in optio ad.</p>
                 </section>
 
                 <section class="recent-posts">
@@ -90,13 +95,24 @@
                 <div class="post-text">
                     <h2 class="post-title">Our mission at Planted</h2>
 
-                    <p class="post-metadata">Monday <time datetime="2019-01-21">January 21st, 2019</time> by <strong>Yousra</strong></p>
-    
+                    <p class="post-metadata">Monday <time datetime="2019-01-21">January 21st, 2019</time> by
+                        <strong>Yousra</strong></p>
+
                     <div class="post-content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam optio error eius eum illo? At, et iure. Itaque natus distinctio ex sequi amet aut, culpa atque explicabo voluptatem similique perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repellat eveniet? Accusamus eligendi atque suscipit, consequuntur perferendis rem provident distinctio quidem illum ipsum sed laudantium vero rerum impedit similique voluptates?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, voluptate. Nesciunt possimus, recusandae rerum quis necessitatibus eaque doloremque illum numquam voluptatem cumque ut nemo dolores, voluptate, ab quibusdam maiores dicta.Ad explicabo, assumenda nostrum sunt soluta doloremque esse et omnis? Quo nemo aliquam, ex neque ad quos id est tenetur itaque ea vitae eos, deserunt corrupti labore ullam similique quisquam.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloremque fuga cumque ad nostrum, consequatur unde beatae quasi error deleniti autem eveniet labore illo amet recusandae facere, explicabo ea! Aliquam!</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam optio error eius eum illo?
+                            At, et iure. Itaque natus distinctio ex sequi amet aut, culpa atque explicabo voluptatem
+                            similique perspiciatis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repellat eveniet? Accusamus
+                            eligendi atque suscipit, consequuntur perferendis rem provident distinctio quidem illum
+                            ipsum sed laudantium vero rerum impedit similique voluptates?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, voluptate. Nesciunt
+                            possimus, recusandae rerum quis necessitatibus eaque doloremque illum numquam voluptatem
+                            cumque ut nemo dolores, voluptate, ab quibusdam maiores dicta.Ad explicabo, assumenda
+                            nostrum sunt soluta doloremque esse et omnis? Quo nemo aliquam, ex neque ad quos id est
+                            tenetur itaque ea vitae eos, deserunt corrupti labore ullam similique quisquam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum doloremque fuga cumque ad
+                            nostrum, consequatur unde beatae quasi error deleniti autem eveniet labore illo amet
+                            recusandae facere, explicabo ea! Aliquam!</p>
                     </div>
                 </div>
             </section>
@@ -109,8 +125,13 @@
                         <img src="./assets/profile-image.jpg" alt="Jeremy's profile picture">
                     </div>
                     <div class="comment-text">
-                        <h4 class="comment-metadata">Tuesday <time datetime="2018-10-09">October 9th, 2018</time> by Jeremy</h4>
-                        <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam voluptatum maiores nesciunt blanditiis, iste eligendi velit eaque nisi exercitationem inventore, minima vero? Corporis laborum voluptates hic commodi voluptate ducimus magni culpa atque quos ullam vel cum, magnam consequatur delectus tempore fugiat mollitia velit porro blanditiis voluptatum eligendi tenetur iste.</p>
+                        <h4 class="comment-metadata">Tuesday <time datetime="2018-10-09">October 9th, 2018</time> by
+                            Jeremy</h4>
+                        <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam
+                            voluptatum maiores nesciunt blanditiis, iste eligendi velit eaque nisi exercitationem
+                            inventore, minima vero? Corporis laborum voluptates hic commodi voluptate ducimus magni
+                            culpa atque quos ullam vel cum, magnam consequatur delectus tempore fugiat mollitia velit
+                            porro blanditiis voluptatum eligendi tenetur iste.</p>
                     </div>
                 </div>
 
@@ -119,10 +140,14 @@
                         <img src="./assets/profile-image-2.jpg" alt="Julia's profile picture">
                     </div>
                     <div class="comment-text">
-                        <h4 class="comment-metadata">Wednesday <time datetime="2018-10-10">October 9th, 2018</time> by Julia</h4>
-                        <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate similique esse, sed provident obcaecati architecto perspiciatis, soluta commodi est expedita repellendus libero qui facere perferendis assumenda inventore adipisci aperiam voluptatibus nisi, porro et fugiat? Sunt eaque dolore rerum dolorem.</p>
+                        <h4 class="comment-metadata">Wednesday <time datetime="2018-10-10">October 9th, 2018</time> by
+                            Julia</h4>
+                        <p class="comment-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptate
+                            similique esse, sed provident obcaecati architecto perspiciatis, soluta commodi est expedita
+                            repellendus libero qui facere perferendis assumenda inventore adipisci aperiam voluptatibus
+                            nisi, porro et fugiat? Sunt eaque dolore rerum dolorem.</p>
                     </div>
-                </div> 
+                </div>
 
                 <div class="communication-form">
                     <form>
@@ -133,9 +158,9 @@
                             <label for="email" class="visuallyHidden">Email</label>
                             <input type="email" placeholder="Email" id="email">
                         </fieldset>
-    
+
                         <textarea name="comment" placeholder="Comment"></textarea>
-    
+
                         <button type="submit">Post Comment</button>
                     </form>
                 </div>
@@ -147,4 +172,5 @@
         <p>Copyright &copy; 2020 Juno College</p>
     </footer>
 </body>
+
 </html>

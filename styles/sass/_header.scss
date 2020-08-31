@@ -4,7 +4,10 @@
 header {
     /* header background */
     background-size: cover;
-    &.main-header { background-image: url(../assets/home-image-1.jpg); } 
+
+    &.main-header {
+        background-image: url(../assets/home-image-1.jpg);
+    }
 
     /* dimensions */
     height: 60vh;
@@ -21,7 +24,7 @@ header {
 }
 
 .main-heading {
-    display:flex;
+    display: flex;
     justify-content: space-around;
     z-index: 1;
 
@@ -46,8 +49,8 @@ h1 {
     z-index: 0;
 
     img {
-    width: 38vw;
-    object-fit: cover;
+        width: 38vw;
+        object-fit: cover;
     }
 }
 
@@ -107,8 +110,13 @@ h1 {
     header {
         background-repeat: no-repeat;
 
-        &.blog-header { background-image: url(../assets/blog-header-1.jpg); }
-        &.contact-header { background-image: url(../assets/contact-header-1.jpg); }
+        &.blog-header {
+            background-image: url(../assets/blog-header-1.jpg);
+        }
+
+        &.contact-header {
+            background-image: url(../assets/contact-header-1.jpg);
+        }
     }
 
     .top-bar {

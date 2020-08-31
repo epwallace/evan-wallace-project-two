@@ -6,7 +6,9 @@ body {
     font-family: $josefin;
 }
 
-body p, input, textarea {
+body p,
+input,
+textarea {
     font-family: $roboto;
     font-size: 20px;
     line-height: 32px;
@@ -73,7 +75,8 @@ button {
     li {
         font-family: $roboto;
         font-size: 18px;
-        line-height: 24px;;
+        line-height: 24px;
+        ;
     }
 
     li.email-address {

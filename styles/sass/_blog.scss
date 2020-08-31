@@ -34,12 +34,14 @@
         display: flex;
         padding: 5px 0;
     }
+
     li a {
         font-family: $roboto;
         text-decoration: none;
         color: $black;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             font-weight: bold;
         }
 
@@ -88,7 +90,7 @@
 
 .post-text {
     width: 85%;
-    
+
     border: 5px solid $sunnyyellow;
     border-top: 0;
     border-right: 0;
@@ -131,7 +133,7 @@
     padding-left: 20px;
 }
 
-.comment-metadata{
+.comment-metadata {
     color: forestgreen;
 }
 
@@ -142,6 +144,7 @@
 /* tweak generic form for blog-sepecific styles */
 .blog-page .communication-form {
     padding: 0;
+
     textarea {
         margin: 20px 0;
     }
@@ -204,6 +207,7 @@
         .comment-metadata {
             flex-shrink: 1;
         }
+
         .comment-body {
             flex-basis: 100%;
         }
