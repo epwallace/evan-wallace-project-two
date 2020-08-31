@@ -41,7 +41,11 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 50%;
+        width: 65%;
+    }
+
+    .mobile-nav {
+        visibility: hidden;
     }
 
     /* navigation link styling*/
@@ -50,11 +54,6 @@ h1 {
         font-size: 20px;
         text-transform: uppercase;
 
-        &.logo {
-            font-size: 36px;
-            text-transform: unset;
-        }
-
         &:hover,
         &:focus,
         &.active {
@@ -62,13 +61,14 @@ h1 {
             font-weight: bold;
         }
     }
+
+    .logo a {
+        font-size: 36px;
+        text-transform: unset;
+    }
 }
 
-.main-heading {
-    padding: 5vh;
-    width: min-content;
-    align-self: center;
-}
+
 
 /* styles for headers on subpages */
 .subpage {

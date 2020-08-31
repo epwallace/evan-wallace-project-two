@@ -32,3 +32,30 @@
     box-shadow: -20px 20px 0 0 $sunnyyellow;
     margin-left: 20px;
 }
+
+@media (max-width: 800px) {
+    .contact-page .communication-form {
+        background: $offwhite;
+
+        // unset box-shadow positioning
+        box-shadow: none;
+        margin-left: 0;
+        top: 0;
+
+        textarea {
+            margin: 20px 0;
+        }
+    }
+
+    .sidebar {
+        text-align: center;
+        width: 100%;
+        padding: 50px 0;
+
+        .socials {
+            width: 35%;
+            margin: 0 auto;
+            padding-top: 0;
+        }
+    }
+}

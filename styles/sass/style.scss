@@ -30,6 +30,10 @@ body {
     margin: 0 auto;
 }
 
+.mobile-only {
+    display: none;
+}
+
 .intro {
     padding: 100px 0;
 }
@@ -95,6 +99,7 @@ button {
     color: $offwhite;
     border: 0;
     display: block;
+    padding: 5px;
     
     /* figure out what's overriding this */
     a {
@@ -243,5 +248,173 @@ footer {
             border: 2px solid $green;
             min-height: 300px;
             padding: 10px 20px;
+        }
+    }
+
+    @media (max-width: 800px) {
+        .mobile-only {
+            display: unset;
+        }
+
+        .mobile-hidden {
+            display: none;
+        }
+
+        body p {
+            font-size: 16px;
+        }
+
+        header {
+            height: 300px;
+            min-height: 300px;
+        }
+        .wrapper {
+            width: calc(100% - 40px);
+        }
+
+        h1 {
+            font-size: 72px;
+        }
+
+        .content-grid {
+            top: 0;
+        }
+        .top-bar {
+            padding: 10px;
+            width: 100%;
+            justify-content: space-between;
+
+            ul {
+                width: 100%;
+            }
+
+            // hide all nav links
+            li {
+                display: none;
+            }
+
+            // restore only the logo and the hamburger menu
+            li.logo,
+            li.mobile-nav {
+                display: unset;
+            }
+
+            .mobile-nav {
+                visibility: visible !important;
+            }
+        }
+
+        .flower-content {
+            flex-direction: column;
+            padding: 0px;
+        }
+
+        .content-tile {
+            width: 100%;
+
+
+
+            .section-text {
+                width: 100%;
+                padding: 20px;
+            }
+
+            &:first-child {
+                text-align: left;
+                margin-bottom: 60px;
+
+                button {
+                    margin: 0;
+                }
+
+                img.content-img {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        .bullet-points {
+            padding: 50px 0;
+        }
+
+        .bullet-grid {
+            flex-basis: 100%;
+            grid-template-rows: auto auto;
+
+            h3, span {
+                font-size: 24px
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
+
+        .founder-banner {
+            min-height: 200px;
+            object-fit: cover;
+        }
+
+        .founder-content {
+            flex-direction: column;
+            padding: 50px 0;
+
+            .founder-text {
+                margin-top: 40px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .gallery {
+            padding: 0;
+        }
+
+        .gallery-images img {
+            width: 47.5%;
+        }
+
+        .subpage-title {
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        .content-grid {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+        }
+
+        .blog-container {
+            order: 1;
+            padding-left: 0;
+        }
+
+        .side-image {
+            order: 2;
+        }
+
+        .sidebar {
+            order: 3;
+        }
+
+        .communication-form {
+            width: 100%;
+
+            .user-info {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            fieldset input {
+                flex-basis: 100%;
+            }
         }
     }
