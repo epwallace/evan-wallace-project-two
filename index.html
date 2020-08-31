@@ -16,6 +16,10 @@
     <a href="#main" class="skip-link visuallyHidden">Skip to main content.</a>
     <header class="main-header">
         <div class="wrapper header-content">
+            <div class="header-pic">
+                <img src="./assets/header-box.jpg" alt="Nerve plant (Fittonia verschaffeltii) with green leaves and silver venation" class="header-box">
+            </div>
+
                 <nav class="top-bar">
                     <ul>
                         <li class="logo">
@@ -33,18 +37,30 @@
                         <li>
                             <a href="./contact.html">Contact</a>
                         </li>
-                        <li class="mobile-nav">
-                            <a href="#"><i class="fas fa-bars"></i></a>
+                        <li class="mobile-only hamburger-button">
+                            <label for="nav-state"><i class="fas fa-bars"></i></label>
                         </li>
                         
                     </ul>
                 </nav>
 
+                <div class="mobile-only mobile-nav">
+                    <input type="checkbox" id="nav-state" value="link">
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html" class="active">Home</a></li>
+                            <li><a href="#main">About</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+
                 <div class="main-heading">
                     <h1>planted <em>invitation</em></h1>
                 </div>
 
-            <img src="./assets/header-box.jpg" alt="Nerve plant (Fittonia verschaffeltii) with green leaves and silver venation" class="header-box">
         </div>
     </header>
 
@@ -133,7 +149,9 @@
         <section class="founder">
             <img src="./assets/banner-image.jpg" alt="A white porcelain tea kettle flanked by two bouquets in white vases." class="founder-banner">
             <div class="founder-content wrapper">
-                <img src="./assets/founder.jpg" alt="The founder of Planted standing in a garden">
+                <div class="founder-image">
+                    <img src="./assets/founder.jpg" alt="The founder of Planted standing in a garden">
+                </div>
                 <div class="founder-text">
                     <h2>Planted's founder</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ad voluptatum, repellendus molestias saepe repudiandae non accusamus? Nulla incidunt sequi autem veritatis, nisi, animi enim aliquam harum rerum exercitationem dolore labore vel modi similique fuga, ut ea recusandae! Itaque quae tempora eius fuga voluptates assumenda repellat doloremque soluta consequuntur quibusdam!</p>
@@ -144,14 +162,14 @@
 
             <section class="gallery">
                 <div class="gallery-images wrapper">
-                    <a href="#">
+                    <a href="./assets/gallery-image-1.jpg">
                         <img src="./assets/gallery-image-1.jpg" alt="The interior of a greenhouse filled with plants">
                     </a>
-                    <a href="#">
+                    <a href="./assets/gallery-image-2.jpg">
                         <img src="./assets/gallery-image-2.jpg" alt="Overhead view of succulents on a white surface">
                     </a>
-                    <a href="#">
-                        <img src="./assets/gallery-image-3.jpg" alt="Assorted cacti" class="mobile-hidden">
+                    <a href="./assets/gallery-image-3.jpg" class="mobile-hidden">
+                        <img src="./assets/gallery-image-3.jpg" alt="Assorted cacti">
                     </a>
                 </div>
             </section>
@@ -160,5 +178,6 @@
     <footer>
         <p>Copyright &copy; 2020 Juno College</p>
     </footer>
+
 </body>
 </html>

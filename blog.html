@@ -33,11 +33,24 @@
                         <li>
                             <a href="./contact.html">Contact</a>
                         </li>
-                        <li class="mobile-nav">
-                            <a href="#"><i class="fas fa-bars"></i></a>
+                        <li class="mobile-only hamburger-button">
+                            <label for="nav-state"><i class="fas fa-bars"></i></label>
                         </li>
                     </ul>
                 </nav>
+
+                <div class="mobile-only mobile-nav">
+                    <input type="checkbox" id="nav-state" value="link">
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="#main">About</a></li>
+                            <li><a href="./blog.html" class="active">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
                 <h2 class="mobile-only subpage-title">Blog</h2>
         </div>
     </header>

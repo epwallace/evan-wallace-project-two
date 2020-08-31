@@ -10,10 +10,6 @@ header {
     height: 60vh;
     min-height: 500px;
     width: 100vw;
-
-    img {
-        display: none;
-    }
 }
 
 /* flex container for all header elements */
@@ -24,12 +20,34 @@ header {
     height: 100%;
 }
 
+.main-heading {
+    display:flex;
+    justify-content: space-around;
+    z-index: 1;
+
+}
+
+
 h1 {
     color: $offwhite;
     word-spacing: 9999rem;
+    width: min-content;
 
     em {
         color: $sunnyyellow;
+    }
+}
+
+.header-pic {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    z-index: 0;
+
+    img {
+    width: 38vw;
+    object-fit: cover;
     }
 }
 
@@ -42,10 +60,16 @@ h1 {
         align-items: center;
         justify-content: space-between;
         width: 65%;
+        min-width: 500px;
     }
 
-    .mobile-nav {
-        visibility: hidden;
+    .hamburger-button {
+        padding: 5px;
+        color: $offwhite;
+
+        &:hover {
+            color: $sunnyyellow
+        }
     }
 
 
@@ -58,15 +82,11 @@ h1 {
         &:hover,
         &.active {
             color: $sunnyyellow;
-            font-weight: bold;
         }
 
         &:focus {
             background-color: $sunnyyellow;
             color: $black;
-            font-weight: bold;
-            padding: 10px;
-            border-radius: 5px;
         }
     }
 
@@ -74,6 +94,10 @@ h1 {
         font-size: 36px;
         text-transform: unset;
     }
+}
+
+.mobile-nav {
+    display: none;
 }
 
 
