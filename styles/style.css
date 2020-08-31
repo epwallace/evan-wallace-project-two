@@ -479,6 +479,16 @@ button {
   color: #2c2c2c;
 }
 
+.sidebar-text li a:hover, .sidebar-text li a:focus {
+  font-weight: bold;
+}
+
+.sidebar-text li a:focus {
+  background-color: #f8e71c;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .sidebar-text li:before {
   content: '•';
   color: forestgreen;
@@ -814,9 +824,17 @@ h1 emph {
   text-transform: uppercase;
 }
 
-.top-bar a:hover, .top-bar a:focus, .top-bar a.active {
+.top-bar a:hover, .top-bar a.active {
   color: #f8e71c;
   font-weight: bold;
+}
+
+.top-bar a:focus {
+  background-color: #f8e71c;
+  color: #2c2c2c;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .top-bar .logo a {
@@ -848,6 +866,51 @@ html {
 
 a {
   text-decoration: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* buttons and global focus effects */
+button,
+.link-button {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #0e902d;
+  color: #f0efed;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: 0;
+  padding: 5px;
+}
+
+button:focus,
+a:focus img,
+.link-button:focus,
+input:focus,
+textarea:focus {
+  -webkit-box-shadow: 10px 10px 0 0 #f8e71c;
+          box-shadow: 10px 10px 0 0 #f8e71c;
+}
+
+a:focus i {
+  background-color: #f8e71c;
+  font-size: 30px;
+  font-weight: bold;
+  border: 5px solid #f8e71c;
+}
+
+a.skip-link:focus,
+a.skip-link:active {
+  padding: 0px;
+  border: 2px solid white;
+  background-color: #f8e71c;
+  color: #2c2c2c;
+  margin: 200px auto;
+  left: 0;
+  top: 0;
 }
 
 body {
@@ -967,19 +1030,6 @@ body {
   width: 80%;
 }
 
-button {
-  background-color: #0e902d;
-  color: #f0efed;
-  border: 0;
-  display: block;
-  padding: 5px;
-  /* figure out what's overriding this */
-}
-
-button a {
-  font-family: "Josefin Sans", sans-serif !important;
-}
-
 .bullet-points {
   background: #f0efed;
   padding: 100px 0;
@@ -1093,8 +1143,14 @@ button a {
   padding: 100px 0;
 }
 
-.gallery-images img {
-  width: 30%;
+.gallery-images a {
+  display: inline-block;
+}
+
+.gallery-images a img {
+  display: block;
+  width: 20vw;
+  height: 20vw;
 }
 
 footer {

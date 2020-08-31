@@ -48,6 +48,7 @@ h1 {
         visibility: hidden;
     }
 
+
     /* navigation link styling*/
     a {
         color: $offwhite;
@@ -55,10 +56,17 @@ h1 {
         text-transform: uppercase;
 
         &:hover,
-        &:focus,
         &.active {
             color: $sunnyyellow;
             font-weight: bold;
+        }
+
+        &:focus {
+            background-color: $sunnyyellow;
+            color: $black;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
         }
     }
 

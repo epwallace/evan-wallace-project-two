@@ -20,9 +20,55 @@ a {
     text-decoration: none;
 }
 
+strong {
+    font-weight: bold;
+}
+
+/* buttons and global focus effects */
+button,
+.link-button {
+    // button funt
+    font-family: $josefin;
+    background-color: $green;
+    color: $offwhite;
+
+    // button display
+    display: block;
+    width: max-content;
+    border: 0;
+    padding: 5px;
+}
+
+button:focus,
+a:focus img,
+.link-button:focus,
+input:focus,
+textarea:focus {
+    box-shadow: 10px 10px 0 0 $sunnyyellow;
+}
+
+a:focus i {
+    background-color: $sunnyyellow;
+    font-size: 30px;
+    font-weight: bold;
+    border: 5px solid $sunnyyellow;
+}
+
+a.skip-link:focus,
+a.skip-link:active {
+    padding: 0px;
+    border: 2px solid white;
+    background-color: $sunnyyellow;
+    color: $black;
+    margin: 200px auto;
+    left:0;
+    top: 0;
+}
+
 body {
     background-color: $offwhite;
 }
+
 
 .wrapper {
     width: 80%;
@@ -93,19 +139,7 @@ body {
     width: 80%;
 }
 
-button {
 
-    background-color: $green;
-    color: $offwhite;
-    border: 0;
-    display: block;
-    padding: 5px;
-    
-    /* figure out what's overriding this */
-    a {
-        font-family: $josefin !important;
-    }
-}
 
 .bullet-points {
     background: $offwhite;
@@ -185,8 +219,14 @@ button {
     justify-content: space-between;
     padding: 100px 0;
 
-    img {
-        width: 30%;
+    a {
+        display: inline-block;
+    }
+
+    a img {
+        display: block;
+        width: 20vw;
+        height: 20vw;
     }
 }
 

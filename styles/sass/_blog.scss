@@ -38,6 +38,16 @@
         font-family: $roboto;
         text-decoration: none;
         color: $black;
+
+        &:hover, &:focus {
+            font-weight: bold;
+        }
+
+        &:focus {
+            background-color: $sunnyyellow;
+            padding: 10px;
+            border-radius: 5px;
+        }
     }
 
     /* customize 'bullet' appearance by using pseudoelements */
